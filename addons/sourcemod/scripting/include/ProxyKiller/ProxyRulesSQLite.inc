@@ -40,7 +40,7 @@ methodmap ProxyRulesSQLite < ProxyRules
 {
 	public ProxyRulesSQLite(char[] tablePrefix)
 	{
-		ProxyRules rules = new ProxyRules(RulesMode_SQLite, g_hDatabases[Idx_ProxyRulesSQLite]);
+		ProxyRules rules = new ProxyRules(RulesMode_SQLite);
 		rules.SetString("table_prefix", tablePrefix);
 		return view_as<ProxyRulesSQLite>(rules);
 	}

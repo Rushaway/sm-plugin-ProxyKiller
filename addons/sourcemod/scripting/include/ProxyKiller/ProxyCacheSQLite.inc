@@ -41,7 +41,7 @@ methodmap ProxyCacheSQLite < ProxyCache
 {
 	public ProxyCacheSQLite(char[] tablePrefix)
 	{
-		ProxyCache cache = new ProxyCache(CacheMode_SQLite, g_hDatabases[Idx_ProxyCacheSQLite]);
+		ProxyCache cache = new ProxyCache(CacheMode_SQLite);
 		cache.SetString("table_prefix", tablePrefix);
 		return view_as<ProxyCacheSQLite>(cache);
 	}
