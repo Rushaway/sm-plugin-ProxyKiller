@@ -44,7 +44,7 @@ methodmap ProxyRulesMySQL < ProxyRules
 {
 	public ProxyRulesMySQL(char[] tablePrefix)
 	{
-		ProxyRules rules = new ProxyRules(RulesMode_MySQL, db);
+		ProxyRules rules = new ProxyRules(RulesMode_MySQL, g_hDatabases[Idx_ProxyRulesMySQL]);
 		rules.SetString("table_prefix", tablePrefix);
 		return view_as<ProxyRulesMySQL>(rules);
 	}

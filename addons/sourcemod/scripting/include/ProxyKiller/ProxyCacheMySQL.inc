@@ -41,7 +41,7 @@ methodmap ProxyCacheMySQL < ProxyCache
 {
 	public ProxyCacheMySQL(char[] tablePrefix)
 	{
-		ProxyCache cache = new ProxyCache(CacheMode_MySQL, g_hProxyCacheMySQL_Database);
+		ProxyCache cache = new ProxyCache(CacheMode_MySQL, g_hDatabases[Idx_ProxyCacheMySQL]);
 		cache.SetString("table_prefix", tablePrefix);
 		return view_as<ProxyCacheMySQL>(cache);
 	}
