@@ -13,8 +13,6 @@
 // ====================== VARIABLES ========================== //
 
 bool g_bBlackListed[MAXPLAYERS + 1] = {false};
-Handle g_min;
-Handle g_max;
 
 ProxyCache g_Cache = null;
 ProxyRules g_Rules = null;
@@ -86,9 +84,6 @@ public void OnPluginStart()
 	CreateCommands();
 
 	AutoExecConfig(true);
-
-	g_min = CreateArray();
-	g_max = CreateArray();
 }
 
 public void OnAllPluginsLoaded()
